@@ -1,0 +1,16 @@
+angular.module('{{name}}Directive', [])
+.directive '{{name}}', [
+	()->
+		linkFunction = (scope, el, attr)->        
+			console.log "{{name}} Scope: ", scope
+			console.log "{{name}} Element: ", el
+			console.log "{{name}} Attributes: ", attr
+     
+
+		{
+		restrict: 'E'
+		replace: true 
+		templateUrl: './directives/{{name}}/{{name}}.tpl.html'
+		link: linkFunction
+		}
+]

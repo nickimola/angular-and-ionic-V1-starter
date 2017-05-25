@@ -1,0 +1,16 @@
+{
+    "files": [
+        {
+            "from": "directive.hbs",
+            "to": "src/directives/{{name}}/{{name}}.coffee"
+        },
+        {
+            "from": "directive.tpl.hbs",
+            "to": "src/directives/{{name}}/{{name}}.tpl.html"
+        },
+        {
+            "from": "directive.style.hbs",
+            "to": "src/directives/{{name}}/{{name}}.style.less"
+        }
+    ]
+}
