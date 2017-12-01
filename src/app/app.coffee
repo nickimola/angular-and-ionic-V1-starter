@@ -1,4 +1,4 @@
-angular.module('nickAppCV', ['ionic', 'menuController', 'homeController'])
+angular.module('myApp', ['ionic', 'menuController', 'homeController'])
 .run()
 .config [
   '$stateProvider',
