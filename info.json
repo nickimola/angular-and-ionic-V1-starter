@@ -1,0 +1,11 @@
+{
+  "appID": "com.helloworld.app",
+  "appName": "hello-world",
+  "appDescription": "This is the hello world app description",
+  "appVersion": "0.0.1",
+  "author": {
+    "email": "hello@world.com",
+    "name": "Hello World",
+    "website": "http://helloworld.com"
+  }
+}

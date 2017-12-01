@@ -1,0 +1,16 @@
+{
+    "files": [
+        {
+            "from": "section.ctrl.hbs",
+            "to": "src/sections/{{name}}/{{name}}.ctrl.coffee"
+        },
+        {
+            "from": "section.tpl.hbs",
+            "to": "src/sections/{{name}}/{{name}}.tpl.html"
+        },
+        {
+            "from": "section.style.hbs",
+            "to": "src/sections/{{name}}/{{name}}.style.less"
+        }
+    ]
+}
