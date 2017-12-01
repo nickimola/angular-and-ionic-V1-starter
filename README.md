@@ -8,7 +8,6 @@
 
 Pre Processors:
 * [Coffeescript](http://coffeescript.org/)
-
 * [Less](http://lesscss.org/)
 
 
@@ -32,10 +31,10 @@ There are two main folders in the project:
 
 The _src_ folder's structure is the following:
 
-* `app` contains `app.coffee` (to bootstrap the app) and `variables.less` (to create all your less variables to be used in the whole project)
-* `assets` contains all the assets required by your app (fonts, img, etc)
-* `directives` contains all the directives that you need in your app 
-* `sections` contains all the pages (sections) of your app.
+* `app` - contains `app.coffee` (to bootstrap the app) and `variables.less` (to create all your less variables to be used in the whole project)
+* `assets` - contains all the assets required by your app (fonts, img, etc)
+* `directives` - contains all the directives that you need in your app 
+* `sections` - contains all the pages (sections) of your app.
 
 Everytime you add something inside the `assets` folder, you need to stop the live reload and run `gulp build`. This will re-compile all the files as well as mirroring the `assets` folder inside `www`, making your newly added assets available in the browser.
 
@@ -53,13 +52,16 @@ Everytime you add something inside the `assets` folder, you need to stop the liv
 
 ##Build
 ####Build for development
+
 `gulp build` - This will build the app NOT minified
 
 ####Build for production
+
 `gulp build-p` - This will build the app minified
 
 > Note: 
->* All the files with extension `*.less` will be compiled to `style.css`
->* All the files with extension `*.coffee` will be compiled to `app.js`
->* All the files with extension `*.tpl.html` will be compiled to a javascript file called `templates.js` which is used by angular's `ngAnnotate` to cache the templates.
->* All the files inside `assets/` will be copied from `src` to `www` with the same folder structure 
+> 
+> * All the files with extension `*.less` will be compiled to `style.css`
+> * All the files with extension `*.coffee` will be compiled to `app.js`> 
+> * All the files with extension `*.tpl.html` will be compiled to a javascript file called `templates.js` which is used by angular's `ngAnnotate` to cache the templates.
+> * All the files inside `assets/` will be copied from `src` to `www` with the same folder structure 
